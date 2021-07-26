@@ -2,24 +2,51 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Home Page</title>
+    <title>Cadastro de Usuário</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="skin/css/estilo.css">
-    <link rel="stylesheet" href="skin/css/style.css">
+    <link rel="stylesheet" href="../../skin/css/estilo.css">
+    <link rel="stylesheet" href="../../skin/css/style.css">
 </head>
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-6 left-side">
-                <button type="button" id="btn-topage" class="to-cad-user"><a href="src/pages/page-cad-user.html">Cadastrar Cliente</a></button>
+            <div class="header">
+                <h3 class="title"><a href="../../index.html">Cadastro de Clientes</a></h3>
             </div>
-            <div class="col-md-6 right-side">
-                <button type="button" id="btn-topage" class="to-cad-prod"><a href="src/pages/page-cad-prod.html">Cadastrar Produto</a></button>
+        </div>
+    </div>
+    <div class="container content">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 form-content">
+                <h3>Complete os seus dados para cadastro</h3>
+                <form action="">
+                    <div class="col-md-12">
+                        <label for="nome">Nome<em>*</em></label>
+                        <input type="text" name="nome" id="nome" maxlength="80" size="80vw"/>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="email">Email<em>*</em></label>
+                        <input type="text" name="email" id="email" maxlength="80" size="80vw"/>
+                    </div>
+                    <div class="endereco">
+                        <div class="col-md-8">
+                            <label for="cidade">Cidade<em>*</em></label>
+                            <input type="text" name="cidade" id="cidade" maxlength="80"/>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="estado">Estado<em>*</em></label>
+                            <input type="text" name="estado" id="estado" maxlength="2" minlength="2"/>
+                        </div>
+                    </div>
+                    <div class="content-center">
+                        <button type="button" id="btnEnviar" class="botao">Criar Conta</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
